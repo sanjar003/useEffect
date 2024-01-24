@@ -4,6 +4,8 @@ import axios from 'axios';
 const Headers = () => {
 	const [inputData, setInputData] = useState('');
 	const [users, setUsers] = useState([]);
+	console.log(users);
+
 	const [inputData2, setInputData2] = useState('');
 
 	useEffect(() => {
@@ -11,7 +13,7 @@ const Headers = () => {
 	}, []);
 
 	useEffect(() => {
-		console.log(inputData);
+		console.log(inputData.length);
 	}, [inputData]);
 
 	const getUsers = async () => {
